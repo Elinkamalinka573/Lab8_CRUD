@@ -44,6 +44,8 @@
             buttonClear = new Button();
             buttonExport = new Button();
             buttonCancel = new Button();
+            txtSearch = new TextBox();
+            btnSearch = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewStudents).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericAge).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericGrade).BeginInit();
@@ -189,11 +191,29 @@
             buttonCancel.Text = "Отмена";
             buttonCancel.UseVisualStyleBackColor = true;
             // 
+            // txtSearch
+            // 
+            txtSearch.Location = new Point(2, 237);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(69, 23);
+            txtSearch.TabIndex = 16;
+            // 
+            // btnSearch
+            // 
+            btnSearch.Location = new Point(2, 272);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(78, 26);
+            btnSearch.TabIndex = 17;
+            btnSearch.Text = "Поиск";
+            btnSearch.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(984, 561);
+            Controls.Add(btnSearch);
+            Controls.Add(txtSearch);
             Controls.Add(buttonCancel);
             Controls.Add(buttonExport);
             Controls.Add(buttonClear);
@@ -238,5 +258,7 @@
         private Button buttonClear;
         private Button buttonExport;
         private Button buttonCancel;
+        private TextBox txtSearch;
+        private Button btnSearch;
     }
 }
